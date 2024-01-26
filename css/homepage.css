@@ -4,26 +4,57 @@ body {
     border-style: solid;
     border-width: .2rem;
 }
+ 
 
 h1 {
+    color: black;
+    line-height: 80%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+
+.homeHeader {
+    /* Container Centering */
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-self: center;
+    align-items: center;
+    max-width: 45vw;
+    margin: 0 auto;
+    /* Text Styling */
     font-family: 'Dickson';
     font-weight: 900;
-    font-size: 4em;
+    font-size: 3em;
+    text-align: center;
+}
+
+.redHeaderText {
+    color: #EF0101;
 }
 
 .userBirthday {
     display: flex;
-    flex-direction: column;
-    height: fit-content;
-    width: fit-content;
     justify-content: center;
     align-items: center;
-    font-family: Moderat;
-
+    margin: 20px;
 }
+
+.userBirthday input#birthday {
+    background-color: #010101;
+    padding: 10px;
+    border: solid;
+    border-color: #010101;
+    border-radius: 20px;
+    color: #FFFAF5;
+    font-family: Moderat;
+}
+
+.userBirthday input#birthday::-webkit-calendar-picker-indicator {
+    background-color: #FFFAF5;
+    color: #FFFAF5;
+}
+
 .zodiac-grid {
     display: flex;
     flex-wrap: wrap;

@@ -1,0 +1,42 @@
+body {
+    background-color: #FFFAF5;
+    border: black;
+    border-style: solid;
+    border-width: .2rem;
+}
+
+.zodiacProfile {
+    display: flex;
+}
+
+.characterProfile,
+.characterGif,
+.characterTagline,
+.characterVideo,
+.characterZodiac,
+.characterImage {
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: black;
+}
+
+.rowOne{
+    display: flex;
+    flex-direction: row;
+}
+
+.stackOne {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+.stackTwo {
+    display: flex;
+    flex-direction: column;
+}
+
+.characterImage {
+    display: flex;
+    flex-grow: 2;
+}
