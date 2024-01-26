@@ -1,3 +1,4 @@
+
 body {
     background-color: #FFFAF5;
     border: black;
@@ -5,8 +6,34 @@ body {
     border-width: .2rem;
 }
 
+h1 {
+    font-family: 'Dickson';
+    font-weight: 900;
+}
+
+h1.characterZodiac {
+    text-align: center;
+}
+
+h1.characterTagline {
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Moderat';
+    font-weight: 500;
+    font-style: italic;
+}
+
+p {
+    font-family: 'Moderat';
+    font-weight: bold;
+    font-style: normal;
+}
 .zodiacProfile {
     display: flex;
+    max-width: 100vw;
+    max-height: 100vh;
 }
 
 .characterProfile,
@@ -20,20 +47,45 @@ body {
     border-color: black;
 }
 
+/* Sets the first set containing .characterProfile, .characterGif, .characterTagline, .characterVideo to be 65% of the viewport width. */
+.setOne {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 65vw;
+    height: 100vh;
+}
+
+/* Contains the character profile, gif and tagline. */
 .rowOne{
     display: flex;
     flex-direction: row;
 }
 
+/* Contains the character gif and tagline */
 .stackOne {
     display: flex;
     flex-direction: column;
-    flex-grow: 2;
 }
 
+/* Stacks the .characterZodiac and .characterImage atop each other into a column. Set's this column (Set 2) to be 35% of the viewport width. */
 .stackTwo {
     display: flex;
     flex-direction: column;
+    flex-basis: 35vw;
+}
+
+.characterProfile {
+    flex: 0.7;
+}
+.characterGif {
+    flex: 0.7;
+}
+
+.characterVideo {
+    flex: .8;
+}
+.characterTagline {
+    flex: 0.3;
 }
 
 .characterImage {
