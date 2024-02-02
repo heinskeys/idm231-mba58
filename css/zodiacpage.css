@@ -6,6 +6,7 @@ body {
     border: black;
     border-style: solid;
     border-width: .2rem;
+    margin: 20px;
 }
 
 .characterProfile,
@@ -29,6 +30,7 @@ h1 {
 /* Centers all .characterTagline + .characterZodiac H1's. */
 .center{
     text-align: center;
+    margin: 0 0 0 0;
 }
 
 h2 {
@@ -42,12 +44,54 @@ p {
     font-family: 'Moderat';
     font-weight: bold;
     font-style: normal;
+    font-size: 1.3rem;
 }
 
 .characterProfile h1 {
     font-size: 7rem;
     margin: 0px;
 }
+
+.characterTagline h1, .characterZodiac h1 {
+    font-size: 4rem;
+}
+
+/* BUTTON STYLING */ 
+
+.enterNewBtn {
+    background-color: #EF0101;
+    border: none;
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Moderat';
+    font-weight: 500;
+}
+
+.enterNewBtn::after {
+    content: "\2192"; 
+    margin-left: 10px; 
+    font-family: 'Moderat';
+    font-weight: 500;
+    font-size: ;
+}
+
+.scrollBtn {
+    background-color: #EF0101;
+    border: none;
+    border-radius: 100px;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Moderat';
+    font-weight: 500;
+}
+
 
 /* GRAPHIC STYLING */
 
@@ -58,20 +102,26 @@ p {
     height: 35px;
 }
 
+.zodiacImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* GRID STYLING */
 
 .zodiacProfile {
     display: flex;
     max-width: 100vw;
-    max-height: 100vh;
+    max-height: 150vh;
 }
 
 /* Sets the first set containing .characterProfile, .characterGif, .characterTagline, .characterVideo to be 70% of the viewport width. */
 .setOne {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    width: 70%;
+    height: 150vh;
+    width: 65%;
 }
 
 /* Contains the character profile, gif and tagline. Sets the height of rowOne to be 45% of the ENITRE CONTAINER (.zodiacProfile).*/
@@ -79,56 +129,72 @@ p {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 45%;
+    height: 40%;
 }
 
 /* Sets the width of the .characterProfile to be 60% of the .rowOne container. */
 .characterProfile {
-    width: 60%;
+    width: 65%;
     padding: 20px;
 }
 
 /* Sets the height of the .characterGif to be 70% of the .rowOne container. */
 .characterGif {
     width: 100%;
-    height: 70%;
+    height: 75%;
 }
 
 /* Sets the height of the .characterTagline to be 30% of the .rowOne container. */
 .characterTagline {
+    display: flex;
     width: 100%;
-    height: 30%;
+    height: 25%;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Contains the character gif and tagline. Sets the width to be 40% of the .setOne container. */
 .stackOne {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 35%;
 }
 
 .characterVideo {
-    height: 55%;
+    height: 60%;
+    width: 100%;
 }
 
 /* Stacks the .characterZodiac and .characterImage atop each other into a column. Set's this column (Set 2) to be 30% of the viewport width. */
 .setTwo {
     display: flex;
     flex-direction: column;
-    width: 30%;
-    height: 100vh;
+    width: 35%;
+    height: 150vh;
 }
 
+/* Sets the width and height to 100% of .setTwo CONTAINER.*/
 .stackTwo {
     width: 100%;
     height: 100%;
 }
 
+/* Sets the height of .characterZodiac to be 15% of the .setTwo container */
 .characterZodiac {
-    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12.5%;
 }
 
+/* Sets the height of .characterImage to be 85% of the .setTwo container */
 .characterImage {
-    height: 85%;
+    height: 87.5%;
+    overflow: hidden;
 }
 
+.characterVideo video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
