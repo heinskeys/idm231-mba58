@@ -3,7 +3,7 @@
 
 body {
     background-color: #FFFAF5;
-    border: black;
+    border: #000000;
     border-style: solid;
     border-width: .2rem;
     margin: 20px;
@@ -76,7 +76,6 @@ p {
     margin-left: 10px; 
     font-family: 'Moderat';
     font-weight: 500;
-    font-size: ;
 }
 
 .scrollBtn {
