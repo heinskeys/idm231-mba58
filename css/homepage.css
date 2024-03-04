@@ -29,7 +29,7 @@ h1 {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-family: 'Moderat';
+    font-family: Moderat;
     font-weight: 500;
 }
 
@@ -42,7 +42,7 @@ h1 {
     max-width: 45vw;
     margin: 0 auto;
     /* Text Styling */
-    font-family: 'Dickson';
+    font-family: Dickson;
     font-weight: 900;
     font-size: 3em;
     text-align: center;
