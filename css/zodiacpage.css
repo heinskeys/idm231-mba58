@@ -1,6 +1,10 @@
 
 /* BORDER STYLING */
 
+.zodiacPage {
+    display: none;
+}
+
 body {
     background-color: #FFFAF5;
     border: #000000;
