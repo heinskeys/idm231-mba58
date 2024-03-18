@@ -1,3 +1,7 @@
+.hideMain {
+    display: none;
+}
+
 body {
     background-color: #FFFAF5;
     border: black;

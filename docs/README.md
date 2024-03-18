@@ -16,7 +16,7 @@ List of zodiacs and associated characters along with their birthdays and flavor 
 ## Pisces (Feb 19th - March 20th)
 - Panda; March 5th
 - Yuta Okkotsu; March 7th, 2001 
-- Yuji Otadori; March 20th, 2003
+- Yuji Itadori; March 20th, 2003
 
 ## Aries (March 21st - April 19th)
 - Miwa Kasumi; April 4th, 2001

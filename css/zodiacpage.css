@@ -1,12 +1,11 @@
-
-/* BORDER STYLING */
-
-.zodiacPage {
+.hideMain {
     display: none;
 }
 
+/* BORDER STYLING */
+
 body {
-    background-color: #FFFAF5;
+    background-color: #f7f7f7;
     border: #000000;
     border-style: solid;
     border-width: .2rem;
