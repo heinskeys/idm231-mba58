@@ -41,22 +41,30 @@ List of zodiacs and associated characters along with their birthdays and flavor 
 ## Cancer (June 22nd - July 22nd)
 - Kento Nanami (Nanamin); July 3rd, 1980 
 
-        
+        Nanami is a reserved and wise individual, often appearing stoic and indifferent. As a former Jujutsu student, his past experiences, including the death of a classmate, have shaped his perspective, leading him to question the profession's sacrifices. In his role as a mentor, he seeks to protect the young Jujutsu Sorcerers from the trauma he faced at their age. 
 
 - Momo Nishimiya; July 7th, 2000
 
 ## Leo (July 23rd - August 22nd)
 - Kugisaki Nobara; August 7th, 2002
 
+        From a young age, Nobara stood out in her small town, determined to trade the countryside for the big city. She formed deep connections with outsiders like Fumi and Saori, aspiring to escape her village and reunite with them in Tokyo. As a jujutsu sorcerer, Nobara carries herself confidently, unafraid to take charge even when her peers hesitate. Her strong sense of duty and pride as a fighter shine through, particularly in moments of crisis where she remains level-headed and decisive.
+
 ## Virgo (Aug 23rd - Sept 22nd)
 - Aoi Todo; September 23rd, 2000
+
+        Aoi Todo epitomizes the Virgo traits of meticulousness, organization, and diligence. Despite his eccentricity and love for battle, a subtle self-doubt lingers within him. As a mentor to allies like Yuji, Todo's depth of character shines through. Flamboyant yet deeply intelligent, he navigates battles with confidence and a profound sense of duty. Todo's disdain for boredom drives him to seek challenge, but his commitment to allies remains unwavering.   
 
 ## Libra (Sept 23 - Oct 23rd)
 - Mechamaru/Kokichi Muta; October 4th, 2001
 - Toge Inumaki; October 23rd, 2001 
 
+        Toge embodies the empathetic nature of a Libra. Despite his initial aloofness, he's caring and protective, always putting his friends first. Using rice ball ingredients to communicate, he shields others from his cursed speech. Toge's bravery in protecting his allies, even in dire situations, highlights his unwavering loyalty and compassionate spirit, typical of his zodiac sign.
+
 ## Scorpio (Oct 24th - Nov 21st)
 - Shoko Ieiri; November 7th, 1989
+
+        Shoko embodies the intensity and secrecy of a Scorpio. Despite her laid-back demeanor, she's fiercely protective of others' emotional needs while keeping her own guarded. As a school doctor, she maintains a stoic professionalism, concealing her personal struggles behind a composed façade. Yet, her skills as a healer and reverse cursed technique user make her an invaluable asset in the world of jujutsu.
 
 ## Sagittarius (Nov 22nd - Dec 21st)
 - Satoru Gojo; December 7th, 1989
@@ -66,5 +74,7 @@ List of zodiacs and associated characters along with their birthdays and flavor 
 ## Capricorn (Dec 22nd - Jan 19)
 - Toji Fushiguro; December 31
 - Megumi Fushiguro; December 22nd, 2002
+
+        Megumi embodies the determination and practicality of a Capricorn. His stoic demeanor hides a depth of emotion and a strong sense of justice. From a young age, he displayed maturity and dedication, protecting those he cares about. Despite his reserved nature, Megumi challenges tradition and follows his own path as a jujutsu sorcerer, forming deep connections with his friends along the way.
 
 
