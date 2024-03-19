@@ -37,6 +37,8 @@ h1 {
     font-weight: 500;
 }
 
+
+
 .homeHeader {
     /* Container Centering */
     display: flex;
@@ -56,15 +58,16 @@ h1 {
     color: #EF0101;
 }
 
-.userBirthday {
+.birthdayInput {
     display: flex;
+    flex-direction: row;
+    gap: 5px;
     justify-content: center;
-    align-items: center;
-    margin: 20px;
+    margin-top: 20px;
     margin-bottom: 50px;
 }
 
-.userBirthday input#birthday {
+.birthdayInput input#birthday {
     background-color: #010101;
     padding: 10px;
     border: solid;
@@ -74,10 +77,24 @@ h1 {
     font-family: Moderat;
 }
 
-.userBirthday input#birthday::-webkit-calendar-picker-indicator {
+.birthdayInput input#birthday::-webkit-calendar-picker-indicator {
     background-color: #FFFAF5;
     color: #FFFAF5;
 }
+
+.birthdayInput .submitBtn {
+    background-color: #EF0101;
+    border: none;
+    border-radius: 20px;
+    color: #FFF;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Moderat';
+    font-weight: 500;
+    display: inline-block;
+}
+
 
 .zodiac-grid {
     display: flex;

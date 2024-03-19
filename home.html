@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/homepage.css">
-    <link rel="stylesheet" href="css/zodiacpage.css">
+    <link rel="stylesheet" href="css/homepage.css" id="homeStyle">
+    <link rel="stylesheet" href="css/zodiacpage.css" id="zodiacStyle">
     <title>What's Your JJK Zodiac!?</title>
 </head>
 <body>
@@ -18,8 +18,13 @@
         <div class="homeHeader">
             <h1>WHAT'S YOUR <span class="redHeaderText">JUJUTSU KAISEN</span> ZODIAC?</h1>
         </div>
-        <div class="userBirthday">
-            <input type="date" name="birthday" id="birthday" min="1950-01-01" max="2030-01-01">
+        <div class="birthdayInput">
+            <div class="userBirthday">
+                <input type="date" name="birthday" id="birthday" min="1950-01-01" max="2030-01-01">
+            </div>
+            <button class="submitBtn">
+                Submit Birthday
+            </button>
         </div>
     </header>
 
@@ -162,7 +167,7 @@
                 <div class="rowOne">
                     <div class="characterProfile">
                         <h1> YUJI ITADORI <img src="images/icons/sagittarius.png" alt="" class="zodiacIcon"></h1>
-                        <h2>March 20th, 2003 </h2>
+                        <h2>Born March 20th, 2003 </h2>
                         <p>Like his sign, Satoru Gojo is as charismatic as he is flighty. As the pride of the Gojo Clan (he is the only member) and the world's strongest jujutsu sorcerer, Satoru embraces the adventurous spirit of his zodiac sign. He uses his influence not just for protection but also to mentor and empower young allies at the Tokyo Jujutsu High.</p>
                         <button class="scrollBtn">
                             &larr;
