@@ -47,16 +47,16 @@ p {
     font-family: 'Moderat';
     font-weight: bold;
     font-style: normal;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 .characterProfile h1 {
-    font-size: 7rem;
+    font-size: 8rem;
     margin: 0px;
 }
 
 .characterTagline h1, .characterZodiac h1 {
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 /* BUTTON STYLING */ 
@@ -94,6 +94,10 @@ p {
     font-weight: 500;
 }
 
+.buttonFormat {
+    display: flex;
+    flex-direction: row;
+}
 
 /* GRAPHIC STYLING */
 
@@ -136,8 +140,11 @@ p {
 
 /* Sets the width of the .characterProfile to be 60% of the .rowOne container. */
 .characterProfile {
+    display: flex;
+    flex-direction: column;
     width: 65%;
     padding: 20px;
+    flex-grow: 1;
 }
 
 /* Sets the height of the .characterGif to be 70% of the .rowOne container. */
@@ -177,6 +184,8 @@ p {
 
 /* Sets the width and height to 100% of .setTwo CONTAINER.*/
 .stackTwo {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
 }
@@ -191,11 +200,13 @@ p {
 
 /* Sets the height of .characterImage to be 85% of the .setTwo container */
 .characterImage {
+    display: flex;
     height: 87.5%;
     overflow: hidden;
 }
 
 .characterVideo video {
+    display: flex;
     width: 100%;
     height: 100%;
     object-fit: cover;
