@@ -23,18 +23,21 @@ h1 {
     margin: auto;
     padding: 20px;
 }
-
 .helpBtn {
     background-color: #000000;
     border: none;
-    border-radius: 100%;
+    border-radius: 50%; /* Set border-radius to 50% for a perfect circle */
     color: rgb(255, 255, 255);
-    padding: 15px;
+    padding: 10px; /* Adjust padding as needed */
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: flex; /* Use flexbox to center content vertically and horizontally */
+    align-items: center;
+    justify-content: center;
     font-family: Moderat;
     font-weight: 500;
+    width: 40px; /* Ensure width and height are equal */
+    height: 40px; /* Adjust as needed */
 }
 
 
@@ -129,7 +132,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.76);
+    background-color: #0000008e;
 }
 
 .zodiacInfoOverlay img {

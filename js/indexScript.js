@@ -1,10 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
-
-    // !!!! GET SIGN ON HOMEPAGE !!!
     var zodiacBoxes = document.querySelectorAll(".zodiacBox");
     var zodiacPages = document.querySelectorAll(".zodiacProfile");
-    var returnHome = document.querySelectorAll(".scrollBtn");
+    var returnHomeButtons = document.querySelectorAll(".scrollBtn");
     var hideHome = document.querySelectorAll(".mainContent");
+
+    // Variable to store the currently playing video
+    var currentVideo = null;
+
+    // Hides the zodiacProfile content initially
+    hideZodiacProfile();
 
     // Hides all the "home" content.
     function hideHomeContent() {
@@ -31,11 +35,13 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // As a default, hide the zodiacProfiles, turn off the zodiac stylesheet and leave only the home content and homestylesheet visible. 
-    document.getElementById('homeStyle').disabled = false;
-    document.getElementById('zodiacStyle').disabled = true;
-    hideZodiacProfile();
-
+    // Pauses the currently playing video and resets it to the beginning
+    function pauseAndResetVideo(video) {
+        if (video) {
+            video.pause();
+            video.currentTime = 0;
+        }
+    }
 
     // When a user clicks on a "zodiacBox", display the zodiacProfile associated.
     zodiacBoxes.forEach((box, index) => {
@@ -44,19 +50,38 @@ document.addEventListener("DOMContentLoaded", function() {
             hideZodiacProfile(); 
             if (zodiacPages[index]) { 
                 zodiacPages[index].style.display = "flex";
+
+                // Pause and reset the currently playing video
+                pauseAndResetVideo(currentVideo);
+
+                // Play the video associated with the clicked zodiac
+                var video = zodiacPages[index].querySelector('video');
+                if (video) {
+                    video.muted = false; // Unmute the video
+                    video.play().then(function() {
+                        // Video started playing
+                    }).catch(function(error) {
+                        console.error('Autoplay was prevented:', error);
+                    });
+                    currentVideo = video;
+                }
             }
         });
     });
 
-    //  When a user clicks on the back button, hide the zodiacProfile content and display the home content.
-    returnHome.forEach(button => {
+    // When a user clicks on the back button, hide the zodiacProfile content and display the home content.
+    returnHomeButtons.forEach(button => {
         button.addEventListener("click", () => {
             hideZodiacProfile();
             viewHomeContent();
+
+            // Pause and reset the currently playing video
+            pauseAndResetVideo(currentVideo);
+            currentVideo = null;
         });
     });
 
-    //  !!!! GET SIGN BY ENTERING DATE !!!
+    // GET SIGN BY ENTERING DATE
 
     // Denotes what astrological sign concides with which date. 
     function getZodiacSign(month, day) { 
@@ -89,8 +114,7 @@ document.addEventListener("DOMContentLoaded", function() {
         return astrological_sign;
     }
 
-
-    //  Displays zodiacProfile based on sign.
+    // Displays zodiacProfile based on sign.
     function showZodiacProfile(sign) {
         var className = sign.toLowerCase() + "Character";
         var zodiacProfile = document.querySelector("." + className);
@@ -120,4 +144,3 @@ document.addEventListener("DOMContentLoaded", function() {
         showZodiacProfile(astrological_sign);
     });
 });
-

@@ -55,13 +55,13 @@ p {
 
 
 /* Media queries for smaller screens */
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1600px) {
     .characterProfile h1 {
-        font-size: 9rem; /* Adjust font size for smaller screens (tablets) */
+        font-size: 8rem; /* Adjust font size for smaller screens (tablets) */
     }
     
     .characterProfile h2 {
-        font-size: 2rem; /* Adjust font size for smaller screens (tablets) */
+        font-size: 1.8rem; /* Adjust font size for smaller screens (tablets) */
         margin-bottom: 10px;
     }
     
@@ -72,11 +72,11 @@ p {
     }
 
     .characterTagline h1, .characterZodiac h1 {
-        font-size: 7rem;
+        font-size: 6rem;
     } 
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1499) {
+@media screen and (max-width: 1599px) and (min-width: 768px) {
     .characterProfile h1 {
         font-size: 6.5rem; /* Adjust font size for smaller screens (mobile devices) */
     }
