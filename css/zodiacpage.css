@@ -50,35 +50,31 @@ p {
 }
 
 .characterProfile h1 {
-    font-size: 6rem;
+    /* font-size: 6rem; */
     margin: 0px;
-}
-
-.characterTagline h1, .characterZodiac h1 {
-    font-size: 4rem;
-} */
-
-.characterProfile h1,
-.characterProfile h2,
-.characterProfile p {
-    flex-grow: 1; /* Allow text to grow to fill the available space */
-    margin: 0; /* Remove default margin to prevent unwanted space */
 }
 
 
 /* Media queries for smaller screens */
 @media screen and (min-width: 1500px) {
     .characterProfile h1 {
-        font-size: 6rem; /* Adjust font size for smaller screens (tablets) */
+        font-size: 9rem; /* Adjust font size for smaller screens (tablets) */
     }
     
     .characterProfile h2 {
-        font-size: 2.5rem; /* Adjust font size for smaller screens (tablets) */
+        font-size: 2rem; /* Adjust font size for smaller screens (tablets) */
+        margin-bottom: 10px;
     }
     
     .characterProfile p {
-        font-size: 1.2rem; /* Adjust font size for smaller screens (tablets) */
+        font-size: 1.5rem; /* Adjust font size for smaller screens (tablets) */
+        margin-bottom: 20px;
+        margin-top: 20px;
     }
+
+    .characterTagline h1, .characterZodiac h1 {
+        font-size: 7rem;
+    } 
 }
 
 @media screen and (min-width: 1000px) {
@@ -88,11 +84,18 @@ p {
     
     .characterProfile h2 {
         font-size: 1.3rem; /* Adjust font size for smaller screens (mobile devices) */
+        margin-bottom: 5px;
     }
     
     .characterProfile p {
         font-size: 1rem; /* Adjust font size for smaller screens (mobile devices) */
+        margin-top: 10px;
+        margin-bottom: 15px;
     }
+
+    .characterTagline h1, .characterZodiac h1 {
+        font-size: 4rem;
+    } 
 }
 
 
