@@ -54,19 +54,19 @@ p {
 }
 
 
-/* Media queries for smaller screens */
+/* Media queries because the text wont scale correctly */
 @media screen and (min-width: 1600px) {
     .characterProfile h1 {
-        font-size: 8rem; /* Adjust font size for smaller screens (tablets) */
+        font-size: 8rem; 
     }
     
     .characterProfile h2 {
-        font-size: 1.8rem; /* Adjust font size for smaller screens (tablets) */
+        font-size: 1.8rem; 
         margin-bottom: 10px;
     }
     
     .characterProfile p {
-        font-size: 1.5rem; /* Adjust font size for smaller screens (tablets) */
+        font-size: 1.5rem; 
         margin-bottom: 20px;
         margin-top: 20px;
     }
@@ -78,16 +78,16 @@ p {
 
 @media screen and (max-width: 1599px) and (min-width: 768px) {
     .characterProfile h1 {
-        font-size: 6.5rem; /* Adjust font size for smaller screens (mobile devices) */
+        font-size: 6.5rem; 
     }
     
     .characterProfile h2 {
-        font-size: 1.3rem; /* Adjust font size for smaller screens (mobile devices) */
+        font-size: 1.3rem; 
         margin-bottom: 5px;
     }
     
     .characterProfile p {
-        font-size: 1rem; /* Adjust font size for smaller screens (mobile devices) */
+        font-size: .8rem; 
         margin-top: 10px;
         margin-bottom: 15px;
     }
@@ -111,6 +111,11 @@ p {
     display: inline-block;
     font-family: 'Moderat';
     font-weight: 500;
+}
+
+.scrollBtn:hover {
+    background-color: #000000;
+    cursor: pointer;
 }
 
 .buttonFormat {

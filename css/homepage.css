@@ -26,24 +26,23 @@ h1 {
 .helpBtn {
     background-color: #000000;
     border: none;
-    border-radius: 50%; /* Set border-radius to 50% for a perfect circle */
+    border-radius: 50%; 
     color: rgb(255, 255, 255);
-    padding: 10px; /* Adjust padding as needed */
+    padding: 10px; 
     text-align: center;
     text-decoration: none;
-    display: flex; /* Use flexbox to center content vertically and horizontally */
+    display: flex;
     align-items: center;
     justify-content: center;
     font-family: Moderat;
     font-weight: 500;
-    width: 40px; /* Ensure width and height are equal */
-    height: 40px; /* Adjust as needed */
+    width: 40px; 
+    height: 40px; 
 }
 
 
 
 .homeHeader {
-    /* Container Centering */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -78,6 +77,7 @@ h1 {
     border-radius: 20px;
     color: #FFFAF5;
     font-family: Moderat;
+    cursor: pointer;
 }
 
 .birthdayInput input#birthday::-webkit-calendar-picker-indicator {
@@ -98,6 +98,10 @@ h1 {
     display: inline-block;
 }
 
+.submitBtn:hover {
+    background-color: #000000;
+    cursor: pointer;
+}
 
 .zodiac-grid {
     display: flex;
@@ -120,6 +124,7 @@ h1 {
 
 .zodiac-grid .zodiacBox {
     position: relative;
+    cursor: pointer;
 }
 
 .zodiac-grid .zodiacInfoOverlay {
@@ -136,8 +141,8 @@ h1 {
 }
 
 .zodiacInfoOverlay img {
-    width: 48px; /* Adjust the width as needed */
-    height: 48px; /* Adjust the height as needed */
+    width: 48px; 
+    height: 48px; 
     margin-bottom: 8px;
 }
 

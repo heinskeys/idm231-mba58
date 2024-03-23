@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Take note of month and day entered.
         var month = selectedDate.getMonth() + 1; // Months are zero-indexed, so we add 1
         var day = selectedDate.getDate();
-        // Pass that information into function that denotes which sig concides with which date in order to get astrological sign.
+        // Pass that information into function that denotes which sign concides with which date in order to get astrological sign.
         var astrological_sign = getZodiacSign(month, day);
     
         hideHomeContent();
