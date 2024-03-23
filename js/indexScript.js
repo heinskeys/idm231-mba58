@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     var zodiacBoxes = document.querySelectorAll(".zodiacBox");
     var zodiacPages = document.querySelectorAll(".zodiacProfile");
-    var returnHomeButtons = document.querySelectorAll(".scrollBtn");
+    var returnHome = document.querySelectorAll(".scrollBtn");
     var hideHome = document.querySelectorAll(".mainContent");
 
     // Variable to store the currently playing video
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // When a user clicks on the back button, hide the zodiacProfile content and display the home content.
-    returnHomeButtons.forEach(button => {
+    returnHome.forEach(button => {
         button.addEventListener("click", () => {
             hideZodiacProfile();
             viewHomeContent();

@@ -100,26 +100,6 @@ p {
 
 /* BUTTON STYLING */ 
 
-.enterNewBtn {
-    background-color: #EF0101;
-    border: none;
-    border-radius: 30px;
-    color: rgb(255, 255, 255);
-    padding: 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-family: 'Moderat';
-    font-weight: 500;
-}
-
-.enterNewBtn::after {
-    content: "\2192"; 
-    margin-left: 10px; 
-    font-family: 'Moderat';
-    font-weight: 500;
-}
-
 .scrollBtn {
     background-color: #EF0101;
     border: none;
