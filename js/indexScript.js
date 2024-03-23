@@ -43,11 +43,35 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
+    // Pop-up Modal 
+    var modal = document.querySelector(".helpPopup");
+    var btn = document.querySelector(".helpBtn");
+    var span = document.querySelector(".close");
+
+    function hideModal() {
+        modal.style.display = "none";
+    }
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+        hideModal();
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            hideModal();
+        }
+    }
+
     // When a user clicks on a "zodiacBox", display the zodiacProfile associated.
     zodiacBoxes.forEach((box, index) => {
         box.addEventListener("click", () => { 
             hideHomeContent();
             hideZodiacProfile(); 
+            hideModal();
             if (zodiacPages[index]) { 
                 zodiacPages[index].style.display = "flex";
 
@@ -74,6 +98,7 @@ document.addEventListener("DOMContentLoaded", function() {
         button.addEventListener("click", () => {
             hideZodiacProfile();
             viewHomeContent();
+            hideModal();
 
             // Pause and reset the currently playing video
             pauseAndResetVideo(currentVideo);
